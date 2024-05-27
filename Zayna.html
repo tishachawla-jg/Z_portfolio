@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Collection</title>
+    <style>
+        body {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .welcome-box {
+            background-color: #FF99CC;
+            color: black;
+            padding: 20px;
+            display: inline-block;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #FF007F;
+            margin: 20px 0;
+        }
+        h3 {
+            color: black;
+            margin-bottom: 50px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-container img {
+            width: 300px;
+            height: 300px;
+            border: 5px solid pink;
+            border-radius: 15px;
+            animation: flashy-border 1s infinite alternate;
+        }
+        @keyframes flashy-border {
+            0% {
+                border-color: pink;
+            }
+            50% {
+                border-color: yellow;
+            }
+            100% {
+                border-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-box">
+        <h1>Welcome!</h1>
+    </div>
+    <h2>Zayna Here.</h2>
+    <h3>Let me show you my art collection</h3>
+    <div class="image-container">
+        <img src="../1.jpg" alt="Art Image 1">
+        <img src="../2.jpg" alt="Art Image 2">
+    </div>
+</body>
+</html>
